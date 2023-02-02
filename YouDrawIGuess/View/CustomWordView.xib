@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomWordView" customModule="YouDrawIGuess" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="joq-By-vOe" id="GLE-gh-dk8"/>
+                <outlet property="clickButton" destination="Duq-w1-iJj" id="aSB-3K-391"/>
+                <outlet property="mTextField" destination="Zho-3K-ecB" id="qz8-L1-uVN"/>
+                <outlet property="mView" destination="iN0-l3-epB" id="j5y-Mh-bmE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="joq-By-vOe">
+                    <rect key="frame" x="62.5" y="175" width="250" height="150"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入自定义字词" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dn-WB-oZS">
+                            <rect key="frame" x="10" y="15" width="230" height="29.5"/>
+                            <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="21"/>
+                            <color key="textColor" red="0.06831327851835664" green="0.091080138733336979" blue="0.19637613363199299" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zho-3K-ecB">
+                            <rect key="frame" x="15" y="54.5" width="220" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Duq-w1-iJj">
+                            <rect key="frame" x="75" y="98.5" width="100" height="34"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <state key="normal" title="确认送出" backgroundImage="btn2">
+                                <color key="titleColor" red="0.97647058823529409" green="0.98069752513111885" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93602085780430511" green="0.97017066795509177" blue="0.97017066795509177" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Duq-w1-iJj" firstAttribute="top" secondItem="Zho-3K-ecB" secondAttribute="bottom" constant="10" id="1qe-Vi-Crg"/>
+                        <constraint firstItem="Duq-w1-iJj" firstAttribute="width" secondItem="joq-By-vOe" secondAttribute="width" multiplier="150:375" id="7Fr-ZZ-gmU"/>
+                        <constraint firstItem="7dn-WB-oZS" firstAttribute="top" secondItem="joq-By-vOe" secondAttribute="top" constant="15" id="Bz2-3P-cTc"/>
+                        <constraint firstItem="Duq-w1-iJj" firstAttribute="centerX" secondItem="joq-By-vOe" secondAttribute="centerX" id="J84-Ct-7hx"/>
+                        <constraint firstItem="7dn-WB-oZS" firstAttribute="leading" secondItem="joq-By-vOe" secondAttribute="leading" constant="10" id="PjZ-Px-aAy"/>
+                        <constraint firstAttribute="trailing" secondItem="7dn-WB-oZS" secondAttribute="trailing" constant="10" id="Tlc-NH-3V9"/>
+                        <constraint firstItem="Zho-3K-ecB" firstAttribute="leading" secondItem="joq-By-vOe" secondAttribute="leading" constant="15" id="W5e-lE-5dM"/>
+                        <constraint firstItem="Zho-3K-ecB" firstAttribute="top" secondItem="7dn-WB-oZS" secondAttribute="bottom" constant="10" id="WEm-Qr-fKv"/>
+                        <constraint firstAttribute="trailing" secondItem="Zho-3K-ecB" secondAttribute="trailing" constant="15" id="YTV-B0-LQf"/>
+                        <constraint firstAttribute="width" secondItem="joq-By-vOe" secondAttribute="height" multiplier="5:3" id="eKN-wC-vqf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="joq-By-vOe" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="SSn-wT-LP8"/>
+                <constraint firstItem="joq-By-vOe" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" multiplier="500:667" id="dEp-4S-ukK"/>
+                <constraint firstItem="joq-By-vOe" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="250:375" id="z4B-x1-Edj"/>
+            </constraints>
+            <point key="canvasLocation" x="44" y="125.4872563718141"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn2" width="56" height="34"/>
+    </resources>
+</document>
